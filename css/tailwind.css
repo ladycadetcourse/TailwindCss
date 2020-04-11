@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+
+.my-container{
+    width: 1070px;
+    margin: 0 auto;
+}
+
+@tailwind utilities;

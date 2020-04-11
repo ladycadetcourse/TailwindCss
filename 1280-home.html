@@ -1,0 +1,917 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="tailwind.css" type="text/css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+      .fnt {
+        font-weight: normal;
+      }
+      .cntanr {
+        display: grid;
+        width: 70%;
+        grid-template-columns:150px 150px 150px ;
+        grid-template-rows: 140px;
+
+        margin-left: 80px;
+      }
+      .cnt {
+        margin-top: 10%;
+      }
+      .flex-1 {
+        width: 33.333%;
+      }
+      .flex {
+        display: flex;
+      }
+      body {
+        background-size: 100% 109%;
+        height: 619px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(13, 315px);
+        overflow-x: auto;
+        padding-left: 215px !important;
+        padding: 20px;
+        grid-gap: 30px;
+      }
+      .grid::-webkit-scrollbar {
+        display: none;
+      }
+
+      .arrow-right {
+        position: absolute;
+        right: 9%;
+        margin-top: 13%;
+        background: white;
+        z-index: 3;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        padding: 10;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        cursor: pointer;
+        border: 1px solid lightgray;
+      }
+      .right-img {
+        width: 32px;
+        transform: rotate(-90deg);
+      }
+      .arrow-left {
+        position: absolute;
+        left: 9%;
+        margin-top: 13%;
+        background: white;
+        z-index: 3;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        padding: 10;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        cursor: pointer;
+        border: 1px solid lightgray;
+      }
+      .left-img {
+        width: 32px;
+        transform: rotate(90deg);
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="pic.css" />
+  </head>
+
+  <body
+    width="100%"
+    height="100%"
+  >
+    <!----------------------------------Header------------------------------------------->
+    <div class="mbl-header">
+      <div class="mbl-vrsn" onclick="myFunction()">
+        <button><i class="fa fa-bars" aria-hidden="true"></i></button>
+        <ul class="" id="mblnav">
+          <li class="">
+            <a class="text-gray-600 hover:text-blue-800" href="\Users\User\Desktop\tailwind CSS boilerplate 2\1280-home.html">Inicio</a>
+          </li>
+          <li class="">
+            <a class="text-gray-600 hover:text-blue-800" href="#">Produtos</a>
+          </li>
+          <li class="">
+            <a class="text-gray-600 hover:text-blue-800" href="#">
+              Provar produtos
+            </a>
+          </li>
+          <li class="">
+            <a class="text-gray-600 hover:text-blue-800" href="#">Quem somos</a>
+          </li>
+          <li><a href="#" class="log">Login</a></li>
+          <li><a href="#" class="cria"> Cria uma conta</a></li>
+        </ul>
+      </div>
+      <div class="mbl-vrsn" style="text-align: center;">
+        <img src="images/logo.jpg" />
+      </div>
+      <div class="mbl-vrsn" style="text-align: right;">
+        <i class="fa fa-user"></i>
+      </div>
+    </div>
+    <header class="flex items-center pb-3 pt-4 px-12 flex cstm-hder ">
+      <div class="flex-1">
+        <img class="w-1/3 cursor-pointer" src="logo.jpg" />
+      </div>
+      <div class="flex-1">
+        <ul
+          class="flex justify-center justify-evenly m-nav"
+          style="padding: 0;"
+        >
+          <li class="mr-6">
+            <a class="text-gray-600 hover:text-blue-800" href="#">Inicio</a>
+          </li>
+          <li class="mr-6">
+            <a class="text-gray-600 hover:text-blue-800" href="#">Produtos</a>
+          </li>
+          <li class="mr-6">
+            <a class="text-gray-600 hover:text-blue-800" href="#">
+              Provar produtos
+            </a>
+          </li>
+          <li class="mr-6">
+            <a class="text-gray-600 hover:text-blue-800" href="#">Quem somos</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex-1">
+        <div class="flex float-right">
+          <span
+            class="inline-block border border-gray-700 hover:border-purple-200 hover:bg-purple-200 hover:text-white bg-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer"
+            >Login</span
+          >
+          <span
+            class="inline-block border hover:border-purple-200 hover:bg-purple-200 hover:text-white border-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer"
+            >Cria uma conta</span
+          >
+        </div>
+      </div>
+    </header>
+    <div class="main-body pt-10 pb-20 ">
+    <img class="a" src="imgs/banr.png" width="20%" height="60%" />
+    <img class="b" src="imgs/b.png" width="20%" height="60%" />
+    <div class="man">
+      <h1 class="bndr-hd font-bold pb-10">
+        Receba, prove, avalie e veja as avaliações dos <br />seus produtos de beleza favoritos!
+      </h1>
+      <h3 class="fnt" style="letter-spacing: 2px;">
+        Sabemos que o compartilhamento de experiências verdadeiras nos ajuda a  <br />tomar melhores decisões em nossas compras.
+         <br /><br />
+      </h3>
+      <button class="hdr-btn">Ver todos os produtos</button>
+      <br />
+
+      <br />
+      <br />
+      <!------------------------------------------------------------------------------------>
+    </div>
+    <div class="img2">
+      <img src="images/c.png" />
+    </div>
+    </div>
+
+    <!-- slider section -->
+    <div class="cstm-slider" style="margin-bottom: 200px;">
+      <h3 style="color: #0008; padding-left: 16%; margin: 0;">
+        Produtos em destaque
+      </h3>
+     
+      <div id="content" class="grid p-6" >
+        <div class="horizon-next arrow-right">
+          <img class="right-img" src="./imgs/arrow-down.png" />
+        </div>
+        <div class="horizon-prev arrow-left">
+          <img class="left-img" src="./imgs/arrow-down.png" />
+        </div>
+        <div
+          class="w-1/3cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg hover:shadow-md w-full flex flex-columns"
+         >
+          <figure class="flex justify-center pb-2 flex-1 w-full">
+            <img class="w-2/3" src="./imgs/shampoo.png" />
+          </figure>
+          <div class="border-b-2 border-t-2 pb-2 pt-1 px-3 relative">
+            <span
+              class="-mt-4 absolute bg-purple-100 block font-semibold px-2 py-1 rounded text-sm text-white top-0"
+              >Cuidado capilar</span
+            >
+            <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+              Pantene 3 minutos milagrosos
+            </h2>
+            <div class="flex items-center pb-1">
+              <span
+                class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+                >4.8</span
+              >
+              <div class="flex flex-row">
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+              </div>
+            </div>
+            <div>
+              <span class="font-medium">16</span>
+              <span class="text-gray-600">avaliacao</span>
+            </div>
+          </div>
+          <div class="flex p-2 py-0">
+            <span class="border-r-2 flex-1 font-medium py-2 text-center"
+              >Conocer mas</span
+            >
+            <span class="flex-1 font-medium py-2 text-center">Provar</span>
+          </div>
+        </div>
+        <div
+                class="w-1/3cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg hover:shadow-md w-full flex flex-columns"
+        >
+          <figure class="flex justify-center pb-2 flex-1 w-full">
+            <img class="w-2/3" src="./imgs/2.png" />
+          </figure>
+          <div class="border-b-2 border-t-2 pb-2 pt-1 px-3 relative">
+            <span
+                    class="-mt-4 absolute bg-purple-100 block font-semibold px-2 py-1 rounded text-sm text-white top-0"
+            >Cuidado capilar</span
+            >
+            <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+              Máscara L'oréal<br> professionnel Absolut ...
+            </h2>
+            <div class="flex items-center pb-1">
+              <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+              >4.8</span
+              >
+              <div class="flex flex-row">
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+              </div>
+            </div>
+            <div>
+              <span class="font-medium">12</span>
+              <span class="text-gray-600">avaliacao</span>
+            </div>
+          </div>
+          <div class="flex p-2 py-0">
+            <span class="border-r-2 flex-1 font-medium py-2 text-center"
+            >Conocer mas</span
+            >
+            <span class="flex-1 font-medium py-2 text-center">Provar</span>
+          </div>
+        </div>
+        <div
+                class="w-1/3cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg hover:shadow-md w-full flex flex-columns"
+        >
+          <figure class="flex justify-center pb-2 flex-1 w-full">
+            <img class="w-2/3" src="./imgs/12.png" />
+          </figure>
+          <div class="border-b-2 border-t-2 pb-2 pt-1 px-3 relative">
+            <span
+                    class="-mt-4 absolute bg-purple-100 block font-semibold px-2 py-1 rounded text-sm text-white top-0"
+            >Cuidado capilar</span
+            >
+            <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+              La Roche Posay Solución<br> Micelar Ultra
+            </h2>
+            <div class="flex items-center pb-1">
+              <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+              >4.8</span
+              >
+              <div class="flex flex-row">
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+              </div>
+            </div>
+            <div>
+              <span class="font-medium">8</span>
+              <span class="text-gray-600">avaliacao</span>
+            </div>
+          </div>
+          <div class="flex p-2 py-0">
+            <span class="border-r-2 flex-1 font-medium py-2 text-center"
+            >Conocer mas</span
+            >
+            <span class="flex-1 font-medium py-2 text-center">Provar</span>
+          </div>
+        </div>
+        <div
+                class="w-1/3cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg hover:shadow-md w-full flex flex-columns"
+        >
+          <figure class="flex justify-center pb-2 flex-1 w-full">
+            <img class="w-2/3" src="./imgs/d.jpg" />
+          </figure>
+          <div class="border-b-2 border-t-2 pb-2 pt-1 px-3 relative">
+            <span
+                    class="-mt-4 absolute bg-purple-100 block font-semibold px-2 py-1 rounded text-sm text-white top-0"
+            >Cuidado capilar</span
+            >
+            <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+              Esmalte Risqué Cremoso<br> Pop Rosé
+            </h2>
+            <div class="flex items-center pb-1">
+              <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+              >4.8</span
+              >
+              <div class="flex flex-row">
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+              </div>
+            </div>
+            <div>
+              <span class="font-medium">24</span>
+              <span class="text-gray-600">avaliacao</span>
+            </div>
+          </div>
+          <div class="flex p-2 py-0">
+            <span class="border-r-2 flex-1 font-medium py-2 text-center"
+            >Conocer mas</span
+            >
+            <span class="flex-1 font-medium py-2 text-center">Provar</span>
+          </div>
+        </div>
+        <div
+                class="w-1/3cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg hover:shadow-md w-full flex flex-columns"
+        >
+          <figure class="flex justify-center pb-2 flex-1 w-full">
+            <img class="w-2/3" src="./imgs/11.png" />
+          </figure>
+          <div class="border-b-2 border-t-2 pb-2 pt-1 px-3 relative">
+            <span
+                    class="-mt-4 absolute bg-purple-100 block font-semibold px-2 py-1 rounded text-sm text-white top-0"
+            >Cuidado capilar</span
+            >
+            <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+              Tintura Imédia L'Oréal 7 Louro l<br>Natural
+            </h2>
+            <div class="flex items-center pb-1">
+              <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+              >4.8</span
+              >
+              <div class="flex flex-row">
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+              </div>
+            </div>
+            <div>
+              <span class="font-medium">16</span>
+              <span class="text-gray-600">avaliacao</span>
+            </div>
+          </div>
+          <div class="flex p-2 py-0">
+            <span class="border-r-2 flex-1 font-medium py-2 text-center"
+            >Conocer mas</span
+            >
+            <span class="flex-1 font-medium py-2 text-center">Provar</span>
+          </div>
+        </div>
+        <div
+                class="w-1/3cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg hover:shadow-md w-full flex flex-columns"
+        >
+          <figure class="flex justify-center pb-2 flex-1 w-full">
+            <img class="w-2/3" src="./imgs/4.png" />
+          </figure>
+          <div class="border-b-2 border-t-2 pb-2 pt-1 px-3 relative">
+            <span
+                    class="-mt-4 absolute bg-purple-100 block font-semibold px-2 py-1 rounded text-sm text-white top-0"
+            >Cuidado capilar</span
+            >
+            <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+              Niely Gold Bomba Queratina
+            </h2>
+            <div class="flex items-center pb-1">
+              <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+              >4.8</span
+              >
+              <div class="flex flex-row">
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+              </div>
+            </div>
+            <div>
+              <span class="font-medium">16</span>
+              <span class="text-gray-600">avaliacao</span>
+            </div>
+          </div>
+          <div class="flex p-2 py-0">
+            <span class="border-r-2 flex-1 font-medium py-2 text-center"
+            >Conocer mas</span
+            >
+            <span class="flex-1 font-medium py-2 text-center">Provar</span>
+          </div>
+        </div>
+        <div
+                class="w-1/3cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg hover:shadow-md w-full flex flex-columns"
+        >
+          <figure class="flex justify-center pb-2 flex-1 w-full">
+            <img class="w-2/3" src="./imgs/13.png" />
+          </figure>
+          <div class="border-b-2 border-t-2 pb-2 pt-1 px-3 relative">
+            <span
+                    class="-mt-4 absolute bg-purple-100 block font-semibold px-2 py-1 rounded text-sm text-white top-0"
+            >Cuidado capilar</span
+            >
+            <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+              Máscara Inoar Résistance Fibra<br> de Bambu
+            </h2>
+            <div class="flex items-center pb-1">
+              <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+              >4.8</span
+              >
+              <div class="flex flex-row">
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+              </div>
+            </div>
+            <div>
+              <span class="font-medium">16</span>
+              <span class="text-gray-600">avaliacao</span>
+            </div>
+          </div>
+          <div class="flex p-2 py-0">
+            <span class="border-r-2 flex-1 font-medium py-2 text-center"
+            >Conocer mas</span
+            >
+            <span class="flex-1 font-medium py-2 text-center">Provar</span>
+          </div>
+        </div>
+        <div
+                class="w-1/3cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg hover:shadow-md w-full flex flex-columns"
+        >
+          <figure class="flex justify-center pb-2 flex-1 w-full">
+            <img class="w-2/3" src="./imgs/10.png" />
+          </figure>
+          <div class="border-b-2 border-t-2 pb-2 pt-1 px-3 relative">
+            <span
+                    class="-mt-4 absolute bg-purple-100 block font-semibold px-2 py-1 rounded text-sm text-white top-0"
+            >Cuidado capilar</span
+            >
+            <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+              Coloração Professional Color <br>System 3D
+            </h2>
+            <div class="flex items-center pb-1">
+              <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+              >4.8</span
+              >
+              <div class="flex flex-row">
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+              </div>
+            </div>
+            <div>
+              <span class="font-medium">16</span>
+              <span class="text-gray-600">avaliacao</span>
+            </div>
+          </div>
+          <div class="flex p-2 py-0">
+            <span class="border-r-2 flex-1 font-medium py-2 text-center"
+            >Conocer mas</span
+            >
+            <span class="flex-1 font-medium py-2 text-center">Provar</span>
+          </div>
+        </div>
+        <div
+                class="w-1/3cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg hover:shadow-md w-full flex flex-columns"
+        >
+          <figure class="flex justify-center pb-2 flex-1 w-full">
+            <img class="w-2/3" src="./imgs/9.png" />
+          </figure>
+          <div class="border-b-2 border-t-2 pb-2 pt-1 px-3 relative">
+            <span
+                    class="-mt-4 absolute bg-purple-100 block font-semibold px-2 py-1 rounded text-sm text-white top-0"
+            >Cuidado capilar</span
+            >
+            <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+              Água Micelar Nivea MicellAIR <br>Expert
+            </h2>
+            <div class="flex items-center pb-1">
+              <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+              >4.8</span
+              >
+              <div class="flex flex-row">
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+              </div>
+            </div>
+            <div>
+              <span class="font-medium">16</span>
+              <span class="text-gray-600">avaliacao</span>
+            </div>
+          </div>
+          <div class="flex p-2 py-0">
+            <span class="border-r-2 flex-1 font-medium py-2 text-center"
+            >Conocer mas</span
+            >
+            <span class="flex-1 font-medium py-2 text-center">Provar</span>
+          </div>
+        </div>
+        <div
+                class="w-1/3cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg hover:shadow-md w-full flex flex-columns"
+        >
+          <figure class="flex justify-center pb-2 flex-1 w-full">
+            <img class="w-2/3" src="./imgs/8.png" />
+          </figure>
+          <div class="border-b-2 border-t-2 pb-2 pt-1 px-3 relative">
+            <span
+                    class="-mt-4 absolute bg-purple-100 block font-semibold px-2 py-1 rounded text-sm text-white top-0"
+            >Cuidado capilar</span
+            >
+            <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+              Hidratante Paixão Irresistível
+            </h2>
+            <div class="flex items-center pb-1">
+              <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+              >4.8</span
+              >
+              <div class="flex flex-row">
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+              </div>
+            </div>
+            <div>
+              <span class="font-medium">16</span>
+              <span class="text-gray-600">avaliacao</span>
+            </div>
+          </div>
+          <div class="flex p-2 py-0">
+            <span class="border-r-2 flex-1 font-medium py-2 text-center"
+            >Conocer mas</span
+            >
+            <span class="flex-1 font-medium py-2 text-center">Provar</span>
+          </div>
+        </div>
+        <div
+                class="w-1/3cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg hover:shadow-md w-full flex flex-columns"
+        >
+          <figure class="flex justify-center pb-2 flex-1 w-full">
+            <img class="w-2/3" src="./imgs/7.png" />
+          </figure>
+          <div class="border-b-2 border-t-2 pb-2 pt-1 px-3 relative">
+            <span
+                    class="-mt-4 absolute bg-purple-100 block font-semibold px-2 py-1 rounded text-sm text-white top-0"
+            >Cuidado capilar</span
+            >
+            <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+              Cetaphil® Loção Hidratante<br> Pro
+            </h2>
+            <div class="flex items-center pb-1">
+              <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+              >4.8</span
+              >
+              <div class="flex flex-row">
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+              </div>
+            </div>
+            <div>
+              <span class="font-medium">16</span>
+              <span class="text-gray-600">avaliacao</span>
+            </div>
+          </div>
+          <div class="flex p-2 py-0">
+            <span class="border-r-2 flex-1 font-medium py-2 text-center"
+            >Conocer mas</span
+            >
+            <span class="flex-1 font-medium py-2 text-center">Provar</span>
+          </div>
+        </div>
+        <div
+                class="w-1/3cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg hover:shadow-md w-full flex flex-columns"
+        >
+          <figure class="flex justify-center pb-2 flex-1 w-full">
+            <img class="w-2/3" src="./imgs/6.png" />
+          </figure>
+          <div class="border-b-2 border-t-2 pb-2 pt-1 px-3 relative">
+            <span
+                    class="-mt-4 absolute bg-purple-100 block font-semibold px-2 py-1 rounded text-sm text-white top-0"
+            >Cuidado capilar</span
+            >
+            <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+              Anthelios Airlicium FPS 50 La Roche-Posay
+            </h2>
+            <div class="flex items-center pb-1">
+              <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+              >4.8</span
+              >
+              <div class="flex flex-row">
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+              </div>
+            </div>
+            <div>
+              <span class="font-medium">16</span>
+              <span class="text-gray-600">avaliacao</span>
+            </div>
+          </div>
+          <div class="flex p-2 py-0">
+            <span class="border-r-2 flex-1 font-medium py-2 text-center"
+            >Conocer mas</span
+            >
+            <span class="flex-1 font-medium py-2 text-center">Provar</span>
+          </div>
+        </div>
+        <div
+                class="w-1/3cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg hover:shadow-md w-full flex flex-columns"
+        >
+          <figure class="flex justify-center pb-2 flex-1 w-full">
+            <img class="w-2/3" src="./imgs/5.png" />
+          </figure>
+          <div class="border-b-2 border-t-2 pb-2 pt-1 px-3 relative">
+            <span
+                    class="-mt-4 absolute bg-purple-100 block font-semibold px-2 py-1 rounded text-sm text-white top-0"
+            >Cuidado capilar</span
+            >
+            <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+              Batom Líquido Mate Intense
+            </h2>
+            <div class="flex items-center pb-1">
+              <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+              >4.8</span
+              >
+              <div class="flex flex-row">
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+                <img class="h-5 w-5" src="./imgs/star.png" />
+              </div>
+            </div>
+            <div>
+              <span class="font-medium">16</span>
+              <span class="text-gray-600">avaliacao</span>
+            </div>
+          </div>
+          <div class="flex p-2 py-0">
+            <span class="border-r-2 flex-1 font-medium py-2 text-center"
+            >Conocer mas</span
+            >
+            <span class="flex-1 font-medium py-2 text-center">Provar</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------Grid 1---------------------------------->
+<section class="main-section" >  
+
+    <div class="cstm-container gray-text">
+      <h2 style="color: black; position: relative;" class="font-bold text-xl gray-text pb-8">
+        <span
+          style="
+            background-color: #fb8478;
+            display: inline-block;
+            height: 25px;
+            width: 15px;
+            border-radius: 5px;
+            position: absolute;
+            top: 1px;
+          "
+        ></span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Receba produtos de graça e faça a sua avaliação!
+      </h2>
+      <div class="row flex-no-wrap">
+        <div class="w-1/3 flex shadow bg-white px-4 py-6 rounded mr-6 small-rounded small-shadow">
+          <div class="w-1/6 mr-3 flex text-3xl">
+            <p class="margin-auto">1</p>
+          </div>
+          <div class="w-5/6">
+            <h2 class="pb-1 font-bold text-xl">Escolha o produto</h2>
+            <p class="light-gray-text">
+              Na sessão de produtos<br> escolha qual você quer<br> avaliar.<br> 
+            </p>
+          </div>
+        </div>
+        <div class="w-1/3 flex shadow bg-white  px-3 py-5 rounded mr-6 small-rounded small-shadow">
+          <div class="w-1/6 mr-3 flex text-3xl">
+            <p class="margin-auto">2</p>
+          </div>
+          <div class="w-5/6">
+            <h2 class="pb-1 font-bold text-xl">Faça sua avaliação</h2>
+            <p class="light-gray-text">
+              Escreva um comentário<br> sincero sobre o produto<br> que escolheu.
+
+
+
+            </p>
+          </div>
+        </div>
+        <div class="w-1/3 flex shadow bg-white px-3 py-5 rounded small-rounded small-shadow">
+          <div class="w-1/6 mr-3 flex text-3xl">
+            <p class="margin-auto">3</p>
+          </div>
+          <div class="w-5/6">
+            <h2 class="pb-1 font-bold text-xl">Dê sua nota</h2>
+            <p class="light-gray-text">
+              Avalie os atributos do<br> produtos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--button section -->
+    <div class="cstm-bnt" style="position: relative; z-index: 100;">
+      <button>Ver todos os produtos</button>
+    </div>
+    <!--grid 2 -->
+    <div class="cstm-container gray-text pt-32">
+      <h2 style="color: black; position: relative;" class="font-bold text-xl gray-text pb-8 mt-16">
+        <span
+          style="
+            background-color: #fb8478;
+            display: inline-block;
+            height: 25px;
+            width: 15px;
+            border-radius: 5px;
+            position: absolute;
+            top: 1px;
+          "
+        ></span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Receba produtos de graça e faça a sua avaliação!
+      </h2>
+      <div class="row flex-no-wrap">
+        <div class="w-1/3 flex shadow bg-white px-4 py-6 rounded mr-6 small-rounded small-shadow">
+          <div class="w-1/6 mr-3 flex text-3xl">
+            <p class="margin-auto">1</p>
+          </div>
+          <div class="w-5/6">
+            <h2 class="pb-1 font-bold text-xl">Faça o seu cadastro</h2>
+            <p class="light-gray-text">
+              O questionário com seu <br>perfil só precisa ser feito<br> uma vez. Faça agora
+            </p>
+          </div>
+        </div>
+        <div class="w-1/3 flex shadow bg-white px-3 py-5 rounded mr-6 small-rounded small-shadow">
+          <div class="w-1/6 mr-3 flex text-3xl">
+            <p class="margin-auto">2</p>
+          </div>
+          <div class="w-5/6">
+            <h2 class="pb-1 font-bold text-xl">Escolha um produto disponível para você</h2>
+            <p class="light-gray-text">
+              
+            </p>
+          </div>
+        </div>
+        <div class="w-1/3 flex shadow bg-white px-3 py-5 rounded small-rounded small-shadow">
+          <div class="w-1/6 mr-3 flex text-3xl">
+            <p class="margin-auto">3</p>
+          </div>
+          <div class="w-5/6">
+            <h2 class="pb-1 font-bold text-xl">Enviaremos um <br>produto de graça para<br> você provar.</h2>
+            <p class="light-gray-text">
+              Faça sua avaliação quando <br>o seu produto chegar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="images/c.png" />
+    </div>
+    <!--button section -->
+    <div class="cstm-bnt">
+      <button>Pedir e provar produtos</button>
+    </div>
+</section>
+
+
+    <footer class="flex-items-center" style="margin-top: 150px;">
+      <table class="cstm-table">
+        <tr>
+          <td style="width: 50%;"><img src="logo.jpg" /></td>
+          <td>
+            <span>Percerias</span>
+            <br />
+            <span>Contato</span>
+          </td>
+          <td style="width: 30%; padding-left: 30px;">
+            <span
+              >Perguntas<br />
+              frequenteos</span
+            >
+
+            <span>Termos de uso</span>
+          </td>
+        </tr>
+      </table>
+      <div class="mbl-ftr">
+        <ul>
+          <li>
+            <center><img src="logo.png" /></center>
+          </li>
+          <li>
+            <span>Percerias</span>
+            <br />
+            <span>Contato</span>
+          </li>
+          <li>
+            <span>Perguntas frequenteos</span>
+            <br />
+            <span>Termos de uso</span>
+          </li>
+        </ul>
+      </div>
+      <p class="pb-5 pt-20 text-center text-gray-500 cstm-right">
+        2019 @ Beauty LAB.<br />
+        Todos os dirieties reservados.
+      </p>
+    </footer>
+    <script>
+      $(".horizon-prev").click(function (event) {
+        event.preventDefault();
+        $("#content").animate(
+          {
+            scrollLeft: "-=775px",
+          },
+          "slow"
+        );
+      });
+
+      $(".horizon-next").click(function (event) {
+        event.preventDefault();
+        $("#content").animate(
+          {
+            scrollLeft: "+=775px",
+          },
+          "slow"
+        );
+      });
+
+      function myFunction() {
+        var x = document.getElementById("mblnav");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

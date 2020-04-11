@@ -1,0 +1,238 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="t.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./styles.min.css">
+  <title>Login</title>
+  <link rel="stylesheet" href="./t.css">
+  <style>
+    .login-form {
+      background-image: url('images/full.png');
+      background-size: cover;
+    }
+
+    .form-container {
+      max-width: 65em;
+      margin: 0 auto;
+    }
+
+    .login-heading {
+      font-size: 2.65rem;
+    }
+  </style>
+  <link rel="stylesheet" href="./pic.css">
+  <style>
+    .fnt {
+      font-weight: normal;
+    }
+
+    .cntanr {
+      display: grid;
+      width: 70%;
+      grid-template-columns: 150px 150px 150px;
+      grid-template-rows: 140px;
+
+      margin-left: 80px;
+    }
+
+    .cnt {
+      margin-top: 10%;
+    }
+
+    .flex-1 {
+      width: 33.333%;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    body {
+      background-size: 100% 109%;
+      height: 619px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(13, 315px);
+      overflow-x: auto;
+      padding-left: 215px !important;
+      padding: 20px;
+      grid-gap: 30px;
+    }
+
+    .grid::-webkit-scrollbar {
+      display: none;
+    }
+
+    .arrow-right {
+      position: absolute;
+      right: 9%;
+      margin-top: 13%;
+      background: white;
+      z-index: 3;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      padding: 10px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+      cursor: pointer;
+      border: 1px solid lightgray;
+    }
+
+    .right-img {
+      width: 32px;
+      transform: rotate(-90deg);
+    }
+
+    .arrow-left {
+      position: absolute;
+      left: 9%;
+      margin-top: 13%;
+      background: white;
+      z-index: 3;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      padding: 10px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+      cursor: pointer;
+      border: 1px solid lightgray;
+    }
+
+    .left-img {
+      width: 32px;
+      transform: rotate(90deg);
+    }
+  </style>
+  <style>
+    img {
+      max-width: 100% !important;
+      height: auto !important;
+    }
+
+    .w-full {
+      width: 100% !important;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!----------------------------------Header------------------------------------------->
+  <div class="mbl-header">
+    <div class="mbl-vrsn" onclick="myFunction()">
+      <button><i class="fa fa-bars" aria-hidden="true"></i></button>
+      <ul class="" id="mblnav">
+        <li class="">
+          <a class="text-gray-600 hover:text-blue-800" href="#">Inicio</a>
+        </li>
+        <li class="">
+          <a class="text-gray-600 hover:text-blue-800" href="\Users\User\Desktop\tailwind CSS boilerplate\multi\multi\CARD WHITE.html">Produtos</a>
+        </li>
+        <li class="">
+          <a class="text-gray-600 hover:text-blue-800" href="#">
+            Provar produtos
+          </a>
+        </li>
+        <li class="">
+          <a class="text-gray-600  hover:text-blue-800" href="#">Quem somos</a>
+        </li>
+        <li><a href=# class="log">Login</a></li>
+        <li><a href="#" class="cria">
+            Cria uma conta</a></li>
+      </ul>
+    </div>
+    <div class="mbl-vrsn" style="text-align:center"><img src="images/logo.png"></div>
+    <div class="mbl-vrsn" style="text-align:right"><i class="fa fa-user"></i></div>
+
+  </div>
+  <header class="flex items-center pb-3 pt-4 px-12 cstm-hder">
+    <div class="flex-1">
+      <img class="w-1/3 cursor-pointer" src="logo.png" />
+    </div>
+    <div class="flex-1">
+      <ul class="flex justify-center justify-evenly cstm-nav">
+        <li class="mr-6">
+          <a class="text-gray-600 hover:text-blue-800" href="#">Inicio</a>
+        </li>
+        <li class="mr-6">
+          <a class="text-gray-600 hover:text-blue-800" href="#">Produtos</a>
+        </li>
+        <li class="mr-6">
+          <a class="text-gray-600 hover:text-blue-800" href="#">
+            Provar produtos
+          </a>
+        </li>
+        <li class="mr-6">
+          <a class="text-gray-600  hover:text-blue-800" href="#">Quem somos</a>
+        </li>
+      </ul>
+    </div>
+    <div class=" flex-1  mgic">
+      <div class="flex float-right">
+        <span
+          class="inline-block border border-gray-700 hover:border-purple-200 hover:bg-purple-200 hover:text-white bg-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer">Login</span>
+        <span
+          class="inline-block border hover:border-purple-200 hover:bg-purple-200 hover:text-white border-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer">Cria
+          uma conta</span>
+      </div>
+    </div>
+  </header>
+  <!--------------------------------Text--------------------------->
+
+  <div class="w-full login-form overflow-hidden pt-40 pb-32 -mt-24">
+    <div class="form-container">
+      <section class="flex grid-cols-2 gap-48 ">
+        <div class="pr-10 w-2/3">
+          <h1 class="font-bold login-heading w-11/12 mt-0">Receba, prove, avalie e veja as avaliações dos seus
+            produtos de beleza favoritos!</h1>
+          <p class="text-base pt-4  w-9/12"> Acreditamos em opniões imparciais.<br>
+            Sabemos que o compartilhamento de experiências
+            verdadeiras nos ajuda a tomar melhores decisões em nossas compras.<br><br>
+            Esse plataforma foi criada para pessoas
+            apaixonadas por produtos de beleza como nós!</p>
+          <input type="submit" value="Entrar" style="background-color:#270570;"
+            class="w-56 h-12 text-center text-white rounded-full mt-10" /><br>
+        </div>
+
+        <!--------------------------------------------------Form Login----------------------------->
+        <div class="w-1/3">
+          <h2 class="font-bold text-lg">Cria uma conta?</h2>
+          <form action="action_page.php" class="bg-white px-6 py-10 rounded-lg w-full">
+            <fieldset class="text-left ">
+              <label class="emaal uppercase " for="Email" style=" margin-bottom: 10px;">Email</label><br>
+              <input class="py-2 px-4 border border-gray-500 h-12 w-full my-2 rounded-large" placeholder="dummy text"
+                type="e-mail" name="e-mail" /><br>
+              <label class="emaal uppercase mt-3 block" for="Email">Senha</label>
+              <input class="py-2 px-4 border border-gray-500 h-12 w-full my-2 rounded-large" placeholder="dummy text"
+                type="e-mail" name="e-mail">
+              <br>
+              <label class="flex justify-start items-start mt-4">
+                <div
+                  class="bg-white border rounded border-gray-400 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
+                  <input type="checkbox" class="opacity-0 absolute">
+                  <svg class="fill-current hidden w-4 h-4 text-green-500 pointer-events-none" viewBox="0 0 20 20">
+                    <path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
+                  </svg>
+                </div>
+                <div class="select-none text-grayish-800 mb-8">Eu concordo</div>
+              </label>
+              <input type="submit" value="Entrar" style="background-color:#270570;"
+                class="w-full h-12 text-center text-white rounded-full " /><br>
+              <a href="/" class="w-full text-center pt-6 block text-black">Forget Password</a>
+            </fieldset>
+          </form>
+        </div>
+
+      </section>
+    </div>
+  </div>

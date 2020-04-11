@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="170px" height="438px" viewBox="0 0 170 438" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>forma2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="189" height="453"></rect>
+    </defs>
+    <g id="Diseño" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="general-assets" transform="translate(-985.000000, -2628.000000)">
+            <g id="forma2" transform="translate(966.000000, 2615.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <path d="M606.416178,648 C873.764405,648 1117.2515,458.845578 1240.41154,99.0029569 C1363.57158,-260.839664 844.34238,-268 576.994153,-268 C309.645926,-268 566.675167,-128.454478 158.797557,25.3839681 C-249.080053,179.222414 339.067951,648 606.416178,648 Z" id="Oval" fill="#FFC6CE" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

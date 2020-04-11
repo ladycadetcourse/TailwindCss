@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="tailwind.css" type="text/css" rel="stylesheet" />
+    <title>Tailwind CSS</title>
+
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(13, max-content);
+        width: 88vw;
+        overflow-x: auto;
+      }
+      .grid::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="flex items-center pb-3 pt-4 px-12">
+      <div class="flex-1">
+        <img class="w-1/3 cursor-pointer" src="logo.png" />
+      </div>
+      <div class="flex-1">
+        <ul class="flex justify-center justify-evenly">
+          <li class="mr-6">
+            <a class="text-gray-600 hover:text-blue-800" href="\Users\User\Desktop\tailwind CSS boilerplate\page1\pic.html">Inicio</a>
+          </li>
+          <li class="mr-6">
+            <a class="text-gray-600 hover:text-blue-800" href="#">Produtos</a>
+          </li>
+          <li class="mr-6">
+            <a class="text-gray-600 hover:text-blue-800" href="#">
+              Provar produtos
+            </a>
+          </li>
+          <li class="mr-6">
+            <a class="text-gray-600  hover:text-blue-800" href="#"
+              >Quem somos</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class=" flex-1 ">
+        <div class="flex float-right">
+          <span
+            class=" inline-block border border-gray-700 hover:border-purple-200 hover:bg-purple-200 hover:text-white bg-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer"
+             >Login</span
+          >
+          <span
+            class="inline-block border hover:border-purple-200 hover:bg-purple-200 hover:text-white border-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer"
+            >Cria uma conta</span
+          >
+        </div>
+      </div>
+    </header>
+    <div class="my-container">
+      <div class="section-A">
+        <div class="flex pb-16 pt-10">
+          <figure class="flex flex-1 items-center justify-center">
+            <img class="flex w-4/5" src="./build/images/shampoo.png" />
+          </figure>
+          <div class="flex-1">
+            <span
+              class="bg-purple-100 font-semibold pb-1 px-2 rounded text-white"
+              >Cuidado capilar</span
+            >
+            <h1
+              class="font-medium leading-none pb-5 py-2 text-5xl text-gray-700"
+            >
+              Pantene 3 minutos milagrosos
+            </h1>
+            <div class="flex items-center">
+              <div class="flex items-center mr-12">
+                <span class="bg-green-100 mr-3 px-2 py-1 rounded text-white"
+                  >4.8</span
+                >
+                <div class="flex flex-row">
+                  <img class="h-6 w-6" src="./build/images/star.png" />
+                  <img class="h-6 w-6" src="./build/images/star.png" />
+                  <img class="h-6 w-6" src="./build/images/star.png" />
+                  <img class="h-6 w-6" src="./build/images/star.png" />
+                  <img class="h-6 w-6" src="./build/images/star.png" />
+                </div>
+              </div>
+              <div class="mr-12">
+                <span class="font-medium">16</span>
+                <span>avaliacao</span>
+              </div>
+              <div>
+                <span class="font-medium">0</span>
+                <span>disponivel</span>
+              </div>
+            </div>
+            <div class=" py-4">
+              <p class="mb-3 text-gray-600">
+                Condoasdf asdoflasdkfjasdf aosidfawlekasdf oaisdufoasudf
+                aosdfiuasodfa sdf aosdifa sdfasd aosdfiua sdfoasdf oiasduf
+                aosdif asdoifua sdfoiasudf aosdifua sdofiausd foasidfu
+                asodfiuasd foaiweklhr;adklfjwoerupasd faosdifqwpoef asdfoiasd
+                foeiqwpeoi dfosidfa lsdkfxc vlzj xcv;las dfoa sdfo dofasduf
+                wpoeri sdpfa sdfpioweroi sdofas dfoasdf asodf
+              </p>
+              <p class="font-bold text-purple-700">Ler mais</p>
+            </div>
+            <div class="flex">
+              <span
+                class="bg-white border border-gray-700 cursor-pointer font-medium font-semibold hover:bg-pink-100 hover:border-pink-100 hover:text-white inline-block mr-4 px-12 py-4 rounded-full text-gray-700 text-sm"
+                >Pedir e provar produtos</span
+              >
+              <span
+                class="bg-white border border-gray-700 cursor-pointer font-medium font-semibold hover:bg-pink-100 hover:border-pink-100 hover:text-white inline-block  px-12 py-4 rounded-full text-gray-700 text-sm"
+                >Fazer minha avaliacao</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center rounded-lg">
+          <div class="-mb-16 bg-white flex shadow-md flex-1 py-10 rounded-lg">
+            <div class="flex flex-1 flex-row ">
+              <div class="flex flex-col ml-10 mr-20">
+                <div>
+                  <span class="font-medium">Preco:</span>
+                  <span class="text-gray-600">R $ 14,90</span>
+                </div>
+                <div>
+                  <span class="font-medium">Marca:</span>
+                  <span class="text-gray-600">Pantene</span>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div>
+                  <span class="font-medium">Tamanho:</span>
+                  <span class="text-gray-600">170ml</span>
+                </div>
+                <div>
+                  <span class="font-medium">Lancamento:</span>
+                  <span class="text-gray-600">Junho 2017</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1">
+              <span class="font-medium">Como usar: </span>
+              <span class="text-gray-600"
+                >Com um cabeloo as;ldkfjasjdf a;sdklfj a;sdlf ofwoef asdofia
+                weoajsd;lf oawefj as;dfjasdf oasdif a;sdfioj a;osdifja sdfo
+                weoajsd;lf oawefj as;dfjasdf oasdif.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-pink-200 pt-10 section-B">
+      <div class="my-container">
+        <div class="section-B mt-20">
+          <p class="pb-2 text-2xl">Avaliacoes</p>
+          <div class="bg-white flex px-8 rounded-lg">
+            <div class="border-gray-200 border-r-2 pb-6 pr-6 pt-6 w-2/6">
+              <div
+                class="border-b-2 border-gray-200 flex items-start pb-5 pr-12"
+              >
+                <span
+                  class="bg-green-100 mr-3 px-3 py-1 py-2 rounded text-white"
+                  >4.8</span
+                >
+                <div>
+                  <h2 class="font-bold text-base">Muito bom</h2>
+                  <span class="text-gray-600">Availiacao gial.</span>
+                  <span class="font-medium">Com base em 16 commentarios</span>
+                </div>
+              </div>
+              <div class="border-b-2 border-gray-200 flex justify-between py-3">
+                <span>Eficacia</span>
+                <span class="font-bold">7,3</span>
+              </div>
+              <div class="border-b-2 border-gray-200 flex justify-between py-3">
+                <span>Eficacia</span>
+                <span class="font-bold">7,3</span>
+              </div>
+              <div class="border-b-2 border-gray-200 flex justify-between py-3">
+                <span>Eficacia</span>
+                <span class="font-bold">7,1</span>
+              </div>
+              <div class="border-b-2 border-gray-200 flex justify-between py-3">
+                <span>Eficacia</span>
+                <span class="font-bold">7,3</span>
+              </div>
+              <div class="border-b-2 border-gray-200 flex justify-between py-3">
+                <span>Eficacia</span>
+                <span class="font-bold">7,2</span>
+              </div>
+              <div class="border-b-2 border-gray-200 flex justify-between py-3">
+                <span>Eficacia</span>
+                <span class="font-bold">7,6</span>
+              </div>
+              <div class="border-b-2 border-gray-200 flex justify-between py-3">
+                <span>Eficacia</span>
+                <span class="font-bold">7,5</span>
+              </div>
+              <div class="border-b-2 border-gray-200 flex justify-between py-3">
+                <span>Eficacia</span>
+                <span class="font-bold">7,5</span>
+              </div>
+              <div class="border-b-2 border-gray-200 flex justify-between py-3">
+                <span>Eficacia</span>
+                <span class="font-bold">7,5</span>
+              </div>
+            </div>
+            <div class="pl-6 pt-6 pb-6">
+              <div class="border-b-2 border-gray-200 flex flex-col pb-12">
+                <div class="flex justify-between pb-1">
+                  <div class="flex items-start">
+                    <h2 class="font-bold pr-2">Mercedes Robledo</h2>
+                    <span
+                      class="border-2 border-red-300 px-1 rounded text-red-400 text-sm"
+                      >Professional</span
+                    >
+                  </div>
+                  <div class="flex items-start">
+                    <div class="pr-2 flex flex-col content-end">
+                      <span class="text-gray-500 text-sm">Availiacao</span>
+                      <span class="text-gray-500 text-right text-sm"
+                        >geral</span
+                      >
+                    </div>
+
+                    <span
+                      class="cursor-pointer hover:bg-orange-400 bg-green-100 px-3 py-2 rounded text-white"
+                      >5.5</span
+                    >
+                  </div>
+                </div>
+                <div class="flex justify-between pb-1">
+                  <div>
+                    <p class="pr-16 text-gray-500">
+                      "Na minha ciadao helkajsd oeodi jeod oiufasd ooiuwe n
+                      aoasdif alsdjf."
+                    </p>
+                  </div>
+                  <div>
+                    <span class="font-medium text-purple-200 text-sm"
+                      >Ver detalhe</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="border-b-2 border-gray-200 flex flex-col pb-12 pt-5">
+                <div class="flex justify-between pb-1">
+                  <div class="flex items-start">
+                    <h2 class="font-bold pr-2">Mercedes Robledo</h2>
+                  </div>
+                  <div class="flex items-start">
+                    <div class="pr-2 flex flex-col content-end">
+                      <span class="text-gray-500 text-sm">Availiacao</span>
+                      <span class="text-gray-500 text-right text-sm"
+                        >geral</span
+                      >
+                    </div>
+
+                    <span
+                      class="cursor-pointer hover:bg-orange-400 bg-green-100 px-3 py-2 rounded text-white"
+                      >5.5</span
+                    >
+                  </div>
+                </div>
+                <div class="flex justify-between pb-1">
+                  <div>
+                    <p class="pr-16 text-gray-500">
+                      "Na minha ciadao helkajsd oeodi jeod oiufasd ooiuwe n
+                      aoasdif alsdjf."
+                    </p>
+                  </div>
+                  <div>
+                    <span class="font-medium text-purple-200 text-sm"
+                      >Ver detalhe</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="border-b-2 border-gray-200 flex flex-col pb-12 pt-5">
+                <div class="flex justify-between pb-1">
+                  <div class="flex items-start">
+                    <h2 class="font-bold pr-2">Mercedes Robledo</h2>
+                  </div>
+                  <div class="flex items-start">
+                    <div class="pr-2 flex flex-col content-end">
+                      <span class="text-gray-500 text-sm">Availiacao</span>
+                      <span class="text-gray-500 text-right text-sm"
+                        >geral</span
+                      >
+                    </div>
+
+                    <span
+                      class="cursor-pointer hover:bg-orange-400 bg-green-100 px-3 py-2 rounded text-white"
+                      >5.5</span
+                    >
+                  </div>
+                </div>
+                <div class="flex justify-between pb-1">
+                  <div>
+                    <p class="pr-16 text-gray-500">
+                      "Na minha ciadao helkajsd oeodi jeod oiufasd ooiuwe n
+                      aoasdif alsdjf."
+                    </p>
+                  </div>
+                  <div>
+                    <span class="font-medium text-purple-200 text-sm"
+                      >Ver detalhe</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col pb-12 pt-5">
+                <div class="flex justify-between pb-1">
+                  <div class="flex items-start">
+                    <h2 class="font-bold pr-2">Mercedes Robledo</h2>
+                  </div>
+                  <div class="flex items-start">
+                    <div class="pr-2 flex flex-col content-end">
+                      <span class="text-gray-500 text-sm">Availiacao</span>
+                      <span class="text-gray-500 text-right text-sm"
+                        >geral</span
+                      >
+                    </div>
+
+                    <span
+                      class="cursor-pointer hover:bg-orange-400 bg-green-100 px-3 py-2 rounded text-white"
+                      >5.5</span
+                    >
+                  </div>
+                </div>
+                <div class="flex justify-between pb-1">
+                  <div>
+                    <p class="pr-16 text-gray-500">
+                      "Na minha ciadao helkajsd oeodi jeod oiufasd ooiuwe n
+                      aoasdif alsdjf."
+                    </p>
+                  </div>
+                  <div>
+                    <span class="font-medium text-purple-200 text-sm"
+                      >Ver detalhe</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <span class="font-medium pr-2 text-purple-200 cursor-pointer"
+                  >Ver mais Availiacao's</span
+                >
+                <img
+                  class="h-4 w-4 cursor-pointer"
+                  src="./build/images/arrow-down.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-20 pb-56 section-C">
+          <p class="pb-2 text-2xl">Minha Availiacao</p>
+          <div class="bg-white flex px-5 rounded-lg">
+            <div class="pr-5 pt-6 w-1/4">
+              <p class="font-medium pb-1">Comentario</p>
+              <textarea
+                class="border-2 border-gray-200 h-32 p-2 rounded text-sm w-full"
+                placeholder="Escare ioij a sei comentiso"
+              ></textarea>
+            </div>
+            <div class="border-gray-200 border-r flex-1 pr-5 pt-12 pb-6">
+              <div
+                class="flex justify-between pb-2 border-b border-gray-200 mb-2"
+              >
+                <span class="font-medium">Availiacao geral</span>
+                <div class="flex text-sm">
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">0</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group "
+                  >
+                    <span class="text-gray-500 group-hover:text-white">1</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group "
+                  >
+                    <span class="text-gray-500 group-hover:text-white">2</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group "
+                  >
+                    <span class="text-gray-500 group-hover:text-white">3</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group "
+                  >
+                    <span class="text-gray-500 group-hover:text-white">4</span>
+                  </div>
+                  <div
+                    class="border bg-purple-200 flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group "
+                  >
+                    <span class="text-white">5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-between pb-2">
+                <span class="font-medium">Availiacao</span>
+                <div class="flex text-sm">
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">0</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">1</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">2</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">3</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">4</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 bg-purple-200 group"
+                  >
+                    <span class="text-white ">5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-between pb-2">
+                <span class="font-medium">Availiacao</span>
+                <div class="flex text-sm">
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">0</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 bg-purple-200 group"
+                  >
+                    <span class="text-white">1</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">2</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">3</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">4</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-between pb-2">
+                <span class="font-medium">Availiacao</span>
+                <div class="flex text-sm">
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">0</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">1</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">2</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 bg-purple-200 group"
+                  >
+                    <span class="text-white">3</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">4</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-between pb-2">
+                <span class="font-medium">Availiacao</span>
+                <div class="flex text-sm">
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">0</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">1</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">2</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">3</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 bg-purple-200 group"
+                  >
+                    <span class="text-white">4</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-between pb-2">
+                <span class="font-medium">Availiacao</span>
+                <div class="flex text-sm">
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">0</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 bg-purple-200 group"
+                  >
+                    <span class="text-white">1</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">2</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">3</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">4</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-between pb-2">
+                <span class="font-medium">Availiacao</span>
+                <div class="flex text-sm">
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">0</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">1</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">2</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">3</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">4</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 bg-purple-200 group"
+                  >
+                    <span class="text-white">5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-between pb-2">
+                <span class="font-medium">Availiacao</span>
+                <div class="flex text-sm">
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 bg-purple-200 group"
+                  >
+                    <span class="text-white">0</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">1</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">2</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">3</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">4</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-between pb-2">
+                <span class="font-medium">Availiacao</span>
+                <div class="flex text-sm">
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">0</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">1</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">2</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 bg-purple-200 group"
+                  >
+                    <span class="text-white">3</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">4</span>
+                  </div>
+                  <div
+                    class="border flex h-6 items-center justify-center rounded-sm w-6 mr-1 hover:bg-purple-200 group"
+                  >
+                    <span class="text-gray-500 group-hover:text-white">5</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pl-5 pt-8 w-1/3">
+              <form>
+                <div class="pb-3">
+                  <label class="font-medium">Nome</label>
+                  <div class="border-2 mt-1 px-3 py-2 rounded text-sm">
+                    <input
+                      class="outline-none w-full"
+                      type="text"
+                      name="name"
+                      placeholder="Escrevea seu nome"
+                    />
+                  </div>
+                </div>
+                <div class="pb-3">
+                  <label class="font-medium">Email</label>
+                  <div class="border-2 mt-1 px-3 py-2 rounded text-sm">
+                    <input
+                      class="outline-none w-full"
+                      type="email"
+                      name="email"
+                      placeholder="Escevea seu e-mail"
+                    />
+                  </div>
+                </div>
+                <span
+                  class="bg-purple-200 flex font-medium justify-center py-2 rounded-full text-white w-full cursor-pointer"
+                  >Enviar</span
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="-mt-40 absolute my-container">
+          <div class="section-D pb-32">
+            <p class="pb-2 text-2xl">Produtos similares</p>
+            <div class="grid p-6">
+              <div
+                class="cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg w-1/7 hover:shadow-md"
+              >
+                <figure class="flex justify-center pb-2">
+                  <img class="w-2/3" src="./build/images/shampoo.png" />
+                </figure>
+                <div class="border-b-2 border-t-2 pb-2 pt-1 px-3">
+                  <span
+                    class="-m-4 absolute bg-purple-100 font-semibold ml-0 pb-1 px-2 rounded text-sm text-white"
+                    >Cuidado capilar</span
+                  >
+                  <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+                    Pantene 3 minutos milagrosos
+                  </h2>
+                  <div class="flex items-center pb-1">
+                    <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+                      >4.8</span
+                    >
+                    <div class="flex flex-row">
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                    </div>
+                  </div>
+                  <div>
+                    <span class="font-medium">16</span>
+                    <span class="text-gray-600">avaliacao</span>
+                  </div>
+                </div>
+                <div class="flex p-2 py-0">
+                  <span class="border-r-2 flex-1 font-medium py-2 text-center"
+                    >Conocer mas</span
+                  >
+                  <span class="flex-1 font-medium py-2 text-center"
+                    >Provar</span
+                  >
+                </div>
+              </div>
+              <div
+                class="cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg w-1/7 hover:shadow-md"
+              >
+                <figure class="flex justify-center pb-2">
+                  <img class="w-2/3" src="./build/images/shampoo.png" />
+                </figure>
+                <div class="border-b-2 border-t-2 pb-2 pt-1 px-3">
+                  <span
+                    class="-m-4 absolute bg-purple-100 font-semibold ml-0 pb-1 px-2 rounded text-sm text-white"
+                    >Cuidado capilar</span
+                  >
+                  <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+                    Pantene 3 minutos milagrosos
+                  </h2>
+                  <div class="flex items-center pb-1">
+                    <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+                      >4.8</span
+                    >
+                    <div class="flex flex-row">
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                    </div>
+                  </div>
+                  <div>
+                    <span class="font-medium">16</span>
+                    <span class="text-gray-600">avaliacao</span>
+                  </div>
+                </div>
+                <div class="flex p-2 py-0">
+                  <span class="border-r-2 flex-1 font-medium py-2 text-center"
+                    >Conocer mas</span
+                  >
+                  <span class="flex-1 font-medium py-2 text-center"
+                    >Provar</span
+                  >
+                </div>
+              </div>
+              <div
+                class="cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg w-1/7 hover:shadow-md"
+              >
+                <figure class="flex justify-center pb-2">
+                  <img class="w-2/3" src="./build/images/shampoo.png" />
+                </figure>
+                <div class="border-b-2 border-t-2 pb-2 pt-1 px-3">
+                  <span
+                    class="-m-4 absolute bg-purple-100 font-semibold ml-0 pb-1 px-2 rounded text-sm text-white"
+                    >Cuidado capilar</span
+                  >
+                  <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+                    Pantene 3 minutos milagrosos
+                  </h2>
+                  <div class="flex items-center pb-1">
+                    <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+                      >4.8</span
+                    >
+                    <div class="flex flex-row">
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                    </div>
+                  </div>
+                  <div>
+                    <span class="font-medium">16</span>
+                    <span class="text-gray-600">avaliacao</span>
+                  </div>
+                </div>
+                <div class="flex p-2 py-0">
+                  <span class="border-r-2 flex-1 font-medium py-2 text-center"
+                    >Conocer mas</span
+                  >
+                  <span class="flex-1 font-medium py-2 text-center"
+                    >Provar</span
+                  >
+                </div>
+              </div>
+              <div
+                class="cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg w-1/7 hover:shadow-md"
+              >
+                <figure class="flex justify-center pb-2">
+                  <img class="w-2/3" src="./build/images/shampoo.png" />
+                </figure>
+                <div class="border-b-2 border-t-2 pb-2 pt-1 px-3">
+                  <span
+                    class="-m-4 absolute bg-purple-100 font-semibold ml-0 pb-1 px-2 rounded text-sm text-white"
+                    >Cuidado capilar</span
+                  >
+                  <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+                    Pantene 3 minutos milagrosos
+                  </h2>
+                  <div class="flex items-center pb-1">
+                    <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+                      >4.8</span
+                    >
+                    <div class="flex flex-row">
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                    </div>
+                  </div>
+                  <div>
+                    <span class="font-medium">16</span>
+                    <span class="text-gray-600">avaliacao</span>
+                  </div>
+                </div>
+                <div class="flex p-2 py-0">
+                  <span class="border-r-2 flex-1 font-medium py-2 text-center"
+                    >Conocer mas</span
+                  >
+                  <span class="flex-1 font-medium py-2 text-center"
+                    >Provar</span
+                  >
+                </div>
+              </div>
+              <div
+                class="cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg w-1/7 hover:shadow-md"
+              >
+                <figure class="flex justify-center pb-2">
+                  <img class="w-2/3" src="./build/images/shampoo.png" />
+                </figure>
+                <div class="border-b-2 border-t-2 pb-2 pt-1 px-3">
+                  <span
+                    class="-m-4 absolute bg-purple-100 font-semibold ml-0 pb-1 px-2 rounded text-sm text-white"
+                    >Cuidado capilar</span
+                  >
+                  <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+                    Pantene 3 minutos milagrosos
+                  </h2>
+                  <div class="flex items-center pb-1">
+                    <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+                      >4.8</span
+                    >
+                    <div class="flex flex-row">
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                    </div>
+                  </div>
+                  <div>
+                    <span class="font-medium">16</span>
+                    <span class="text-gray-600">avaliacao</span>
+                  </div>
+                </div>
+                <div class="flex p-2 py-0">
+                  <span class="border-r-2 flex-1 font-medium py-2 text-center"
+                    >Conocer mas</span
+                  >
+                  <span class="flex-1 font-medium py-2 text-center"
+                    >Provar</span
+                  >
+                </div>
+              </div>
+              <div
+                class="cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg w-1/7 hover:shadow-md"
+              >
+                <figure class="flex justify-center pb-2">
+                  <img class="w-2/3" src="./build/images/shampoo.png" />
+                </figure>
+                <div class="border-b-2 border-t-2 pb-2 pt-1 px-3">
+                  <span
+                    class="-m-4 absolute bg-purple-100 font-semibold ml-0 pb-1 px-2 rounded text-sm text-white"
+                    >Cuidado capilar</span
+                  >
+                  <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+                    Pantene 3 minutos milagrosos
+                  </h2>
+                  <div class="flex items-center pb-1">
+                    <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+                      >4.8</span
+                    >
+                    <div class="flex flex-row">
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                    </div>
+                  </div>
+                  <div>
+                    <span class="font-medium">16</span>
+                    <span class="text-gray-600">avaliacao</span>
+                  </div>
+                </div>
+                <div class="flex p-2 py-0">
+                  <span class="border-r-2 flex-1 font-medium py-2 text-center"
+                    >Conocer mas</span
+                  >
+                  <span class="flex-1 font-medium py-2 text-center"
+                    >Provar</span
+                  >
+                </div>
+              </div>
+              <div
+                class="cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg w-1/7 hover:shadow-md"
+              >
+                <figure class="flex justify-center pb-2">
+                  <img class="w-2/3" src="./build/images/shampoo.png" />
+                </figure>
+                <div class="border-b-2 border-t-2 pb-2 pt-1 px-3">
+                  <span
+                    class="-m-4 absolute bg-purple-100 font-semibold ml-0 pb-1 px-2 rounded text-sm text-white"
+                    >Cuidado capilar</span
+                  >
+                  <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+                    Pantene 3 minutos milagrosos
+                  </h2>
+                  <div class="flex items-center pb-1">
+                    <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+                      >4.8</span
+                    >
+                    <div class="flex flex-row">
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                    </div>
+                  </div>
+                  <div>
+                    <span class="font-medium">16</span>
+                    <span class="text-gray-600">avaliacao</span>
+                  </div>
+                </div>
+                <div class="flex p-2 py-0">
+                  <span class="border-r-2 flex-1 font-medium py-2 text-center"
+                    >Conocer mas</span
+                  >
+                  <span class="flex-1 font-medium py-2 text-center"
+                    >Provar</span
+                  >
+                </div>
+              </div>
+              <div
+                class="cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg w-1/7 hover:shadow-md"
+              >
+                <figure class="flex justify-center pb-2">
+                  <img class="w-2/3" src="./build/images/shampoo.png" />
+                </figure>
+                <div class="border-b-2 border-t-2 pb-2 pt-1 px-3">
+                  <span
+                    class="-m-4 absolute bg-purple-100 font-semibold ml-0 pb-1 px-2 rounded text-sm text-white"
+                    >Cuidado capilar</span
+                  >
+                  <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+                    Pantene 3 minutos milagrosos
+                  </h2>
+                  <div class="flex items-center pb-1">
+                    <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+                      >4.8</span
+                    >
+                    <div class="flex flex-row">
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                    </div>
+                  </div>
+                  <div>
+                    <span class="font-medium">16</span>
+                    <span class="text-gray-600">avaliacao</span>
+                  </div>
+                </div>
+                <div class="flex p-2 py-0">
+                  <span class="border-r-2 flex-1 font-medium py-2 text-center"
+                    >Conocer mas</span
+                  >
+                  <span class="flex-1 font-medium py-2 text-center"
+                    >Provar</span
+                  >
+                </div>
+              </div>
+              <div
+                class="cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg w-1/7 hover:shadow-md"
+              >
+                <figure class="flex justify-center pb-2">
+                  <img class="w-2/3" src="./build/images/shampoo.png" />
+                </figure>
+                <div class="border-b-2 border-t-2 pb-2 pt-1 px-3">
+                  <span
+                    class="-m-4 absolute bg-purple-100 font-semibold ml-0 pb-1 px-2 rounded text-sm text-white"
+                    >Cuidado capilar</span
+                  >
+                  <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+                    Pantene 3 minutos milagrosos
+                  </h2>
+                  <div class="flex items-center pb-1">
+                    <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+                      >4.8</span
+                    >
+                    <div class="flex flex-row">
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                    </div>
+                  </div>
+                  <div>
+                    <span class="font-medium">16</span>
+                    <span class="text-gray-600">avaliacao</span>
+                  </div>
+                </div>
+                <div class="flex p-2 py-0">
+                  <span class="border-r-2 flex-1 font-medium py-2 text-center"
+                    >Conocer mas</span
+                  >
+                  <span class="flex-1 font-medium py-2 text-center"
+                    >Provar</span
+                  >
+                </div>
+              </div>
+              <div
+                class="cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg w-1/7 hover:shadow-md"
+              >
+                <figure class="flex justify-center pb-2">
+                  <img class="w-2/3" src="./build/images/shampoo.png" />
+                </figure>
+                <div class="border-b-2 border-t-2 pb-2 pt-1 px-3">
+                  <span
+                    class="-m-4 absolute bg-purple-100 font-semibold ml-0 pb-1 px-2 rounded text-sm text-white"
+                    >Cuidado capilar</span
+                  >
+                  <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+                    Pantene 3 minutos milagrosos
+                  </h2>
+                  <div class="flex items-center pb-1">
+                    <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+                      >4.8</span
+                    >
+                    <div class="flex flex-row">
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                    </div>
+                  </div>
+                  <div>
+                    <span class="font-medium">16</span>
+                    <span class="text-gray-600">avaliacao</span>
+                  </div>
+                </div>
+                <div class="flex p-2 py-0">
+                  <span class="border-r-2 flex-1 font-medium py-2 text-center"
+                    >Conocer mas</span
+                  >
+                  <span class="flex-1 font-medium py-2 text-center"
+                    >Provar</span
+                  >
+                </div>
+              </div>
+              <div
+                class="cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg w-1/7 hover:shadow-md"
+              >
+                <figure class="flex justify-center pb-2">
+                  <img class="w-2/3" src="./build/images/shampoo.png" />
+                </figure>
+                <div class="border-b-2 border-t-2 pb-2 pt-1 px-3">
+                  <span
+                    class="-m-4 absolute bg-purple-100 font-semibold ml-0 pb-1 px-2 rounded text-sm text-white"
+                    >Cuidado capilar</span
+                  >
+                  <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+                    Pantene 3 minutos milagrosos
+                  </h2>
+                  <div class="flex items-center pb-1">
+                    <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+                      >4.8</span
+                    >
+                    <div class="flex flex-row">
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                    </div>
+                  </div>
+                  <div>
+                    <span class="font-medium">16</span>
+                    <span class="text-gray-600">avaliacao</span>
+                  </div>
+                </div>
+                <div class="flex p-2 py-0">
+                  <span class="border-r-2 flex-1 font-medium py-2 text-center"
+                    >Conocer mas</span
+                  >
+                  <span class="flex-1 font-medium py-2 text-center"
+                    >Provar</span
+                  >
+                </div>
+              </div>
+              <div
+                class="cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg w-1/7 hover:shadow-md"
+              >
+                <figure class="flex justify-center pb-2">
+                  <img class="w-2/3" src="./build/images/shampoo.png" />
+                </figure>
+                <div class="border-b-2 border-t-2 pb-2 pt-1 px-3">
+                  <span
+                    class="-m-4 absolute bg-purple-100 font-semibold ml-0 pb-1 px-2 rounded text-sm text-white"
+                    >Cuidado capilar</span
+                  >
+                  <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+                    Pantene 3 minutos milagrosos
+                  </h2>
+                  <div class="flex items-center pb-1">
+                    <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+                      >4.8</span
+                    >
+                    <div class="flex flex-row">
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                    </div>
+                  </div>
+                  <div>
+                    <span class="font-medium">16</span>
+                    <span class="text-gray-600">avaliacao</span>
+                  </div>
+                </div>
+                <div class="flex p-2 py-0">
+                  <span class="border-r-2 flex-1 font-medium py-2 text-center"
+                    >Conocer mas</span
+                  >
+                  <span class="flex-1 font-medium py-2 text-center"
+                    >Provar</span
+                  >
+                </div>
+              </div>
+              <div
+                class="cursor-pointer bg-white border-2 mr-6 overflow-hidden pt-2 relative rounded-lg w-1/7 hover:shadow-md"
+              >
+                <figure class="flex justify-center pb-2">
+                  <img class="w-2/3" src="./build/images/shampoo.png" />
+                </figure>
+                <div class="border-b-2 border-t-2 pb-2 pt-1 px-3">
+                  <span
+                    class="-m-4 absolute bg-purple-100 font-semibold ml-0 pb-1 px-2 rounded text-sm text-white"
+                    >Cuidado capilar</span
+                  >
+                  <h2 class="font-medium leading-6 py-3 text-2xl text-gray-800">
+                    Pantene 3 minutos milagrosos
+                  </h2>
+                  <div class="flex items-center pb-1">
+                    <span
+                      class="text-sm bg-green-100 mr-3 px-2 py-1 rounded text-white"
+                      >4.8</span
+                    >
+                    <div class="flex flex-row">
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                      <img class="h-5 w-5" src="./build/images/star.png" />
+                    </div>
+                  </div>
+                  <div>
+                    <span class="font-medium">16</span>
+                    <span class="text-gray-600">avaliacao</span>
+                  </div>
+                </div>
+                <div class="flex p-2 py-0">
+                  <span class="border-r-2 flex-1 font-medium py-2 text-center"
+                    >Conocer mas</span
+                  >
+                  <span class="flex-1 font-medium py-2 text-center"
+                    >Provar</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center mt-12">
+              <span
+                class="border-2 border-gray-700 font-medium justify-center px-12 py-3 rounded-full hover:text-white hover:bg-purple-200 hover:border-purple-200 cursor-pointer"
+                >Ver todos os produtos</span
+              >
+            </div>
+          </div>
+          <div class="mt-20">
+            <div class="flex justify-between">
+              <figure class="flex-1">
+                <img class="w-40" src="logo.png" />
+              </figure>
+              <div class="flex-1 flex justify-around">
+                <div class="flex flex-col">
+                  <span class="font-medium">Percerias</span>
+                  <span class="font-medium">Contato</span>
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-medium">Perguntas frequenteos</span>
+                  <span class="font-medium">Termos de uso</span>
+                </div>
+              </div>
+            </div>
+            <p class="pb-5 pt-20 text-center text-gray-500">
+              2019 @ Beauty LAB. Todos os dirieties reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white p-20"></div>
+  </body>
+</html>
